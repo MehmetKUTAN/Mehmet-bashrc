@@ -8,13 +8,7 @@ alias Mehmetrc='gedit ~/MehmetKUTAN/.MehmetKUTAN; echo \"gedit .MehmetKUTAN\"'
 
 alias bashrcsource='source ~/.bashrc'
 
-alias gazeboSource='source /usr/share/gazebo-11/setup.sh '
-
 alias update='sudo apt autoremove && sudo apt autoclean && sudo apt autopurge && sudo apt update && sudo apt upgrade; echo \"sudo apt update and upgrade!\" '
-
-
-alias humble='source /opt/ros/humble/setup.bash; echo \"Humble is Activated!\"'
-alias rolling='source /opt/ros/rolling/setup.bash; echo \"Rolling is Activated!\"'
 
 alias ros2colcon='colcon build'
 
@@ -28,11 +22,12 @@ alias ros2dep='rosdep install --from-paths src --ignore-src -r -y'
 
 alias Groot="cd ~/ros2_ws/src/Groot/build; ./Groot"
 
-
-alias amr_mini.launch.py='cd ~/ros2_ws/;ros2colcon; ros2source; ros2 launch amr_mini_bringup amr_mini.launch.py; echo \"ros2 launch amr_mini.launch.py\"'
-
 alias rosbridge="ros2 launch rosbridge_server rosbridge_websocket_launch.xml address:=192.168.108.89 port:=9090"
 
 alias npm_start="cd ~/Documents/robotics_developer_interface; npm start"
 
+alias amr_mini.launch.py='cd ~/ros2_ws/;ros2colcon; ros2source; ros2 launch amr_mini_bringup amr_mini.launch.py; echo \"ros2 launch amr_mini.launch.py\"'
+
 source /usr/share/gazebo-11/setup.sh
+
+source /opt/ros/humble/setup.bash; echo \"Humble is Activated!\"
